@@ -9,13 +9,13 @@
   		<div class="container">
   			<nav class="main-navigation">
   				<ul>
-           			<li> <a href="#"> Информация </a> </li>
-           			<li> <a href="#"> Новости </a></li>
-           			<li> <a href="#"> Прайс-лист </a></li>
-           			<li> <a href="#"> Магазин </a></li>
-           			<li> <a href="#"> Контакты </a></li>
-           		</ul>
-           	</nav>
+           	<li> <a href="#"> Информация </a> </li>
+           	<li> <a href="#"> Новости </a></li>
+           	<li> <a href="#"> Прайс-лист </a></li>
+           	<li> <a class="current-page" href="#"> Магазин </a></li>
+           	<li> <a href="#"> Контакты </a></li>
+           </ul>
+        </nav>
            		<div class="user-block">
            			<a class="login" href="#"> Вход </a>
            		</div>
@@ -29,98 +29,111 @@
   					<li class="curent"><a href="#"> Средства для ухода </a></li>
   				</ul>
   		</div>
-  		<div class="left-menu">
-  			<div class="producer-list">
-  				<ul>
+  		<aside class="left-menu">
+        <form action="#" method="post">
+  			 <h3> Производители: </h3>
+  				<ul class="by-brand">
   					<li>  
-  						<input type="checkbox" name="first">
-  						<label class="checkbox"> Baxter of california </label>
+  						<input class="brands" id="baxter" type="checkbox" name="brand" checked>
+  						<label for="baxter"> Baxter of california </label>
   					</li>
   					<li>
-  						<input type="checkbox" name="second">
-  						<label class="checkbox"> mr natty </label>
+  						<input class="brands" id="natty" type="checkbox" name="brand">
+  						<label for="natty"> mr natty </label>
   					</li>
   					<li>
-  						<input type="checkbox" name="third">
-  						<label class="checkbox"> suavecito </label>
+  						<input class="brands" id="suacevito" type="checkbox" name="brand" checked>
+  						<label for="suacevito"> suavecito </label>
   					</li>
   					<li>
-  						<input type="checkbox" name="fourth">
-  						<label class="checkbox"> malin+goetz </label>
+  						<input class="brands" id="malin" type="checkbox" name="brand">
+  						<label for="malin"> malin+goetz </label>
   					</li>
   					<li>
-  						<input type="checkbox" name="fifth">
-  						<label class="checkbox"> murray's </label>
+  						<input class="brands" id="murray" type="checkbox" name="brand" checked>
+  						<label for="murray"> murray's </label>
   					</li>
   					<li>
-  						<input type="checkbox" name="sixth">
-  						<label class="checkbox"> american crew </label>
+  						<input class="brands" id="crew" type="checkbox" name="brand">
+  						<label for="crew"> american crew </label>
   					</li>
   				</ul>
-  			</div>
-  				<div class="goods-list">
-  					<ul>
+  			
+  				<h3> Группы товаров: </h3>
+  					<ul class="by-type">
   						<li>  
-  							<input type="checkbox" name="shaving">
-  							<label class="goods-checkbox"> Бритвенные принадлежности </label>
+  							<input type="checkbox" name="goods" id="shave" value="1" checked>
+  							<label for="shave"> Бритвенные принадлежности </label>
   						</li>
   						<li>  
-  							<input type="checkbox" name="care">
-  							<label class="goods-checkbox"> Средства для ухода </label>
+  							<input type="checkbox" name="goods" id="care" value="2">
+  							<label for="care"> Средства для ухода </label>
   						</li>
   						<li>  
-  							<input type="checkbox" name="accessories">
-  							<label class="goods-checkbox"> аксессуары </label>
+  							<input type="checkbox" name="goods" id="accessories" value="3">
+  							<label for="accessories"> Aксессуары </label>
   						</li>
   					</ul>
   				</div>
-  					<button type="button"> Показать </button>
+  					<button class="filter-button" type="submit"> Показать </button>
 
   		</div>
   			<div class="shop-list">
   				<article>
+          <a class="goods-link" href="#">
   					<img src="http://placehold.it/150x100" alt="Набор для путешествий Baxter of california">
   						<p> Набор для путешествий <span class="names"> "Baxter of california"</span></p>
+          </a>
   							<div class="button-price"> 
   								<p class="price"> 2900 руб. </p>
   									<a class="button-buy" href="#"> КУПИТЬ </a>
   							</div>
   				</article>
   				<article>
+          <a class="goods-link" href="#">
   					<img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер Baxter of california">
   						<p> Увлажняющий кондиционер <span class="names"> "Baxter of california"</span></p>
+          </a>
   							<div class="button-price"> 
   								<p class="price"> 750 руб. </p>
   									<a class="button-buy" href="#"> КУПИТЬ </a>
   							</div>
   				</article>
   				<article>
+          <a class="goods-link" href="#">
   					<img src="http://placehold.it/150x100" alt="Гель для волос sucavecito">
   						<p> Гель для волос <span class="names"> "sucavecito"</span></p>
+          </a>
   							<div class="button-price"> 
   								<p class="price"> 290 руб. </p>
   									<a class="button-buy" href="#"> КУПИТЬ </a>
   							</div>
   				</article>
   				<article>
+          <a class="goods-link" href="#">
   					<img src="http://placehold.it/150x100" alt="Гель для укладки волос american crew">
   						<p> Гель для укладки волос <span class="names"> "american crew"</span></p>
+          </a>
   							<div class="button-price"> 
   								<p class="price"> 500 руб. </p>
   									<a class="button-buy" href="#"> КУПИТЬ </a>
   							</div>
   				</article>
   				<article>
+          <a class="goods-link" href="#">
   					<img src="http://placehold.it/150x100" alt="Гель для волос american crew">
   						<p> Гель для волос <span class="names"> "american crew"</span></p>
+          </a>
   							<div class="button-price"> 
   								<p class="price"> 300 руб. </p>
   									<a class="button-buy" href="#"> КУПИТЬ </a>
   							</div>
   				</article>
   				<article>
+          <a class="goods-link" href="#">
   					<img src="http://placehold.it/150x100" alt="Набор для бритья american crew">
   						<p> Набор для бритья <span class="names"> "american crew"</span></p>
+          </a>
   							<div class="button-price"> 
   								<p class="price"> 3900 руб. </p>
   									<a class="button-buy" href="#"> КУПИТЬ </a>
